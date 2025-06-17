@@ -3,15 +3,24 @@ package com.kata.app;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Anagram {
+/*
+        1. Write a Java program to solve the following problem:
+            You are tasked with creating a utility function for a text-processing application.
+            The function must generate all possible anagrams from a given group of distinct letters.
+            For example, the input {a, b, c} should return the output: abc, acb, bac, bca, cab, cba.
 
-    /**
-     * Generates all possible anagrams for a given string.
-     *
-     * @param input A string containing distinct letters
-     * @return A list of anagram permutations
-     * @throws IllegalArgumentException if input is invalid
-     */
+        Additional Requirements:
+            1. The program should accept any group of distinct letters as input and produce the
+            correct result.
+            2. Optimize for readability and clarity.
+            3. Include basic validation (e.g., ensure the input is non-empty and contains only
+            letters).
+            4. Write unit tests to validate your function with at least three different test cases,
+            including edge cases (e.g., input with a single letter or empty input).
+            5. Document your code clearly, explaining the logic for generating anagrams.
+*/
+
+public class Anagram {
     public static List<String> generateAnagrams(String input) {
         if (input == null || input.isEmpty() || !input.matches("[a-zA-Z]+")) {
             throw new IllegalArgumentException("Entrada inválida. Deve conter apenas letras e não pode estar vazia.");
